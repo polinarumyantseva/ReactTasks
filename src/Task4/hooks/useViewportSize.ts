@@ -20,7 +20,9 @@ export function useViewportSize(): ViewportSize {
 		handleResize();
 	}, [handleResize]);
 
-	useWindowEvent('resize', useThrottle(handleResize));
+	const handleResizeThrottled = useThrottle(handleResize);
+
+	useWindowEvent('resize', handleResizeThrottled);
 
 	return {
 		height,
