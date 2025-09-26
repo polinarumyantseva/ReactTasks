@@ -4,6 +4,7 @@ import './App.css';
 import { Task3 } from './Task3';
 import { Task4 } from './Task4';
 import { AdditionalTask1 } from './AdditionalTask1/AdditionalTask1';
+import { AdditionalTask2 } from './AdditionalTask2/AdditionalTask2';
 
 export function App() {
 	return (
@@ -39,6 +40,13 @@ export function App() {
 			<div className='task-wrapper'>
 				<h3>Дополнительное задание #1</h3>
 				<AdditionalTask1 />
+			</div>
+
+			<hr />
+
+			<div className='task-wrapper'>
+				<h3>Дополнительное задание #2</h3>
+				<AdditionalTask2 />
 			</div>
 		</div>
 	);
